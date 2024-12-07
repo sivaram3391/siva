@@ -6,7 +6,7 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Copy the fat jar into the container at /app
-COPY /target/ spring-boot-web.jar./app
+COPY target/app.jar /app/app.ja
 
 # This should not be changed
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
