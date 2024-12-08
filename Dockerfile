@@ -7,6 +7,6 @@ WORKDIR /app
 
 # Copy the fat jar into the container at /app
 COPY target/ spring-boot-web.jar/app
-
+EXPOSE 8000
 # This should not be changed
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
