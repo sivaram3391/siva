@@ -9,4 +9,4 @@ WORKDIR /app
 COPY target/ spring-boot-web.jar/app
 EXPOSE 8080
 # This should not be changed
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/app spring-boot-web.jar""]
